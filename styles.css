@@ -1,0 +1,49 @@
+#music-player {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+}
+
+#circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url('thaygiaoba.jpg');
+    /* Đổi thành hình ảnh của bạn */
+    background-size: cover;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 5px solid rgb(164, 82, 96);
+    animation: rotate 4s linear infinite;
+}
+
+#play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    /* Kích thước của nút play */
+    height: 64px;
+    background-image: url('imgplay.jpg');
+
+    background-size: cover;
+    display: none;
+}
+
+#play-button:hover {
+    cursor: pointer;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
